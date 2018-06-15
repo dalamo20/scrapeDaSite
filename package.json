@@ -8,5 +8,24 @@
     "mongoose": "^5.1.5",
     "morgan": "^1.9.0",
     "request": "^2.87.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "scrapeDaSite",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalamo20/scrapeDaSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalamo20/scrapeDaSite/issues"
+  },
+  "homepage": "https://github.com/dalamo20/scrapeDaSite#readme"
 }

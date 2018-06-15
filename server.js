@@ -27,11 +27,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/week18Populater");
+//using db.getName(), my database name returned was 'test'
+mongoose.connect("mongodb://localhost/test");
 
 // Routes
 
-// A GET route for scraping the echoJS website
+// A GET route for scraping the reddit website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
   axios.get("https://www.reddit.com/r/dadjokes/").then(function(response) {
@@ -54,7 +55,7 @@ app.get("/scrape", function(req, res) {
       db.Article.create(result)
         .then(function(dbArticle) {
           // View the added result in the console
-          console.log(dbArticle);
+          console.log("this is article results",dbArticle);
         })
         .catch(function(err) {
           // If an error occurred, send it to the client
