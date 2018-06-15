@@ -19,13 +19,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home
+        <a class="nav-item nav-link" href="./index.html">Home
+        </a>
+        <a class="nav-item nav-link active" href="./saved.html">Saved New Dad Jokes
           <span class="sr-only">(current)</span>
         </a>
-        <a class="nav-item nav-link" href="#">Saved Dad Jokes</a>
-        <form class="form-inline">
-          <button class="btn btn-danger" type="button">Scrape New Dad Jokes</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -36,27 +34,28 @@
       <p>A site scraper for dad jokes!</p>
     </div>
   </div>
-</hr>
+  </hr>
   <div class="container">
     <div class="card">
       <div class="card-header">
-        Featured
+        JOKE TITLE
+        <a href="#" class="btn btn-primary">Notes</a>
+        <a href="#" class="btn btn-primary">Delete</a>
       </div>
+      
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">Summary of joke.</p>
       </div>
     </div>
   </div>
   <footer>
-      <p>&copy Dalamo Productions</p>
-    </footer>
+    <p>&copy Dalamo Productions</p>
+  </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>

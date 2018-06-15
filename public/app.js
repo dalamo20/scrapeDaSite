@@ -1,3 +1,7 @@
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
 // Grab the articles as a json
 $.getJSON("/articles", function(data) {
     // For each one
