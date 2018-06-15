@@ -1,7 +1,3 @@
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-
 // Grab the articles as a json
 $.getJSON("/articles", function(data) {
     // For each one
@@ -12,11 +8,11 @@ $.getJSON("/articles", function(data) {
   });
   
   
-  // Whenever someone clicks a p tag
-  $(document).on("click", "p", function() {
+  // Whenever someone clicks a h2 tag
+  $(document).on("click", "h2", function() {
     // Empty the notes from the note section
     $("#notes").empty();
-    // Save the id from the p tag
+    // Save the id from the h2 tag
     var thisId = $(this).attr("data-id");
   
     // Now make an ajax call for the Article
